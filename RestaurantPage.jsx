@@ -11,7 +11,7 @@ const RestaurantPage = () => {
 
   const [category, setCategory] = useState("All");
 
-  const restaurant = restaurants.find((r) => r.id === id);
+  const restaurant = restaurants.find((r) => r._id === id);
 
   if (!restaurant) {
     return <h2>Restaurant not found</h2>;
