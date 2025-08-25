@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Cart from './pages/Cart'
 import RestaurantPage from './pages/RestaurantPage.jsx'
 import LoginPopup from './components/LoginPopup.jsx'
+import SearchPage from './pages/SearchPage.jsx'
 const App = () => {
 
   const [showLogin, setShowLogin] = useState(false)
@@ -19,8 +20,10 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/cart' element={<Cart/>} />
-          <Route path="/restaurant/:_id" element={<RestaurantPage />} />        </Routes>
-        
+          <Route path="/restaurant/:_id" element={<RestaurantPage />} /> 
+          <Route path='/search' element={<SearchPage />} />  
+          </Routes>
+          
       </StoreContextProvider>
       </BrowserRouter>
       
